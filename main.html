@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="w-16" src="assets/Group.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-bold text-center">$ 45000</h1>
+                    <p class="border rounded-s p-1 text-center">available balance</p>
+                </div>
+                <button class="btn btn-primary">Logout</button>
+            </nav>
+            <hr class="my-5 text-blue-600">
+        </header>
+        <section class="mt-5 w-11/12 mx-auto">
+            <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
+            <p >Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+            <div class="cards grid grid-cols-3 gap-2 p-2"> 
+                <div class="flex flex-col justify-center box border py-3 text-center rounded-sm">
+                    <img class="w-10 mx-auto" src="assets/wallet1.png" alt="">
+                    <h3 class="">Add Money</h3>
+                </div>
+                <div class="flex flex-col justify-center box border py-3 text-center rounded-sm">
+                    <img class="w-10 mx-auto" src="assets/purse1.png" alt="">
+                    <h3 class="">Cashout</h3>
+                </div>
+                <div class="flex flex-col justify-center box border py-3 text-center rounded-sm">
+                    <img class="w-10 mx-auto" src="assets/send1.png" alt="">
+                    <h3 class="">Transfer Money</h3>
+                </div>
+                <div class="flex flex-col justify-center box border py-3 text-center rounded-sm">
+                    <img class="w-10 mx-auto" src="assets/bonus1.png" alt="">
+                    <h3 class="">Get Bonus</h3>
+                </div>
+                <div class="flex flex-col justify-center box border py-3 text-center rounded-sm  ">
+                    <img class="w-10 mx-auto" src="assets/money1.png" alt="">
+                    <h3 class="">Pay Bill</h3>
+                </div>
+                <div class="flex flex-col justify-center box border py-3 text-center rounded-sm">
+                    <img class="w-10 mx-auto" src="assets/transaction1.png" alt="">
+                    <h3 class="">Transactions</h3>
+                </div>
+            </div>
+<!-- add money section -->
+            <section>
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend>Select Bank</legend>
+                            <select class="select">
+                                <option disabled selected>Choose a Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nogad">Nogad</option>
+                                <option value="DBBL">DBBL</option>
+                              </select>
+                              <fieldset class="fieldset">
+                                <label class="fieldset-label">Account Number</label>
+                                <input value="01303355126" id="Account-number" type="number" class="input" placeholder="Enter Number" required/>
+
+                                <label class="fieldset-label">Amount to Add</label>
+                                <input 
+                                 id="Account-number" type="number" class="input" placeholder="Enter Amount" required/>
+
+                                <label class="fieldset-label">PIN</label>
+                                <input value="1234" id="pin" type="text" class="input" placeholder="Enter PIN" required/>
+                                <div><a class="link link-hover">Forgot password?</a></div>
+                                <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                              </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </section>
+    </section>
+
+</body>
+</html>
