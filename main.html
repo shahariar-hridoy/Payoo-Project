@@ -13,7 +13,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-16" src="assets/Group.png" alt="">
                 <div>
-                    <h1 class="text-3xl font-bold text-center">$ 45000</h1>
+                    <h1 class="text-3xl font-bold text-center">$ <span id="main-balance">45000</span></h1>
                     <p class="border rounded-s p-1 text-center">available balance</p>
                 </div>
                 <button class="btn btn-primary">Logout</button>
@@ -70,12 +70,12 @@
 
                                 <label class="fieldset-label">Amount to Add</label>
                                 <input 
-                                 id="Account-number" type="number" class="input" placeholder="Enter Amount" required/>
+                                 id="amount" type="number" class="input" placeholder="Enter Amount" required/>
 
                                 <label class="fieldset-label">PIN</label>
                                 <input value="1234" id="pin" type="text" class="input" placeholder="Enter PIN" required/>
                                 <div><a class="link link-hover">Forgot password?</a></div>
-                                <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                                <button id="btn-add-money" class="btn btn-primary mt-4">Add Money</button>
                               </fieldset>
                         </div>
                       </div>
@@ -85,5 +85,6 @@
         </section>
     </section>
 
+    <script src="script/addMoney.js"></script>
 </body>
 </html>
