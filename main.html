@@ -47,7 +47,7 @@
                     <img class="w-10 mx-auto" src="assets/money1.png" alt="">
                     <h3 class="">Pay Bill</h3>
                 </div>
-                <div class="cursor-pointer flex flex-col justify-center box border py-3 text-center rounded-sm">
+                <div id="transaction-box" class="cursor-pointer flex flex-col justify-center box border py-3 text-center rounded-sm">
                     <img class="w-10 mx-auto" src="assets/transaction1.png" alt="">
                     <h3 class="">Transactions</h3>
                 </div>
@@ -61,7 +61,7 @@
                         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <div class="card-body">
                                 <legend>Select Bank</legend>
-                                <select class="select">
+                                <select id="all-bank" class="select">
                                     <option disabled selected>Choose a Bank</option>
                                     <option value="Bkash">Bkash</option>
                                     <option value="Nogad">Nogad</option>
@@ -101,7 +101,7 @@
                                     <input value="01303355126" id="Account-number" type="number" class="input"
                                         placeholder="Enter Number" required />
 
-                                    <label class="fieldset-label">Amount to Add</label>
+                                    <label class="fieldset-label">Amount to Cashout</label>
                                     <input id="cashout-amount" type="number" class="input" placeholder="Enter Amount"
                                         required />
 
@@ -116,6 +116,15 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Transaction history -->
+             <section id="transaction-history">
+                <h1 class="text-3xl font-bold text-red-400 text-center p-3">Transaction history</h1>
+
+                <div id="transaction-container">
+                    
+                </div>
+             </section>
         </section>
     </section>
 
